@@ -1,6 +1,6 @@
 ﻿namespace DPO
 {
-    partial class Form5
+    partial class FormDovyz
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDovyz));
             this.panel6 = new System.Windows.Forms.Panel();
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
@@ -50,14 +51,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
-            this.cueTextBox40 = new CueTextBox();
-            this.cueTextBox36 = new CueTextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.checkBox35 = new System.Windows.Forms.CheckBox();
             this.maskedTextBox33 = new System.Windows.Forms.MaskedTextBox();
@@ -65,20 +58,27 @@
             this.cueTextBox32 = new CueTextBox();
             this.cueTextBox31 = new CueTextBox();
             this.cueTextBox30 = new CueTextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
-            this.cueTextBox1 = new CueTextBox();
-            this.cueTextBox2 = new CueTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.checkBox41 = new System.Windows.Forms.CheckBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
+            this.cueTextBox40 = new CueTextBox();
+            this.cueTextBox36 = new CueTextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel6
@@ -106,10 +106,10 @@
             this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.materialLabel3);
-            this.panel6.Location = new System.Drawing.Point(12, 12);
+            this.panel6.Location = new System.Drawing.Point(12, 1);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(947, 416);
-            this.panel6.TabIndex = 4;
+            this.panel6.TabIndex = 3;
             // 
             // checkBox29
             // 
@@ -119,6 +119,7 @@
             this.checkBox29.Size = new System.Drawing.Size(22, 21);
             this.checkBox29.TabIndex = 22;
             this.checkBox29.UseVisualStyleBackColor = true;
+            this.checkBox29.CheckedChanged += new System.EventHandler(this.checkBox29_CheckedChanged);
             // 
             // checkBox28
             // 
@@ -128,6 +129,7 @@
             this.checkBox28.Size = new System.Drawing.Size(22, 21);
             this.checkBox28.TabIndex = 21;
             this.checkBox28.UseVisualStyleBackColor = true;
+            this.checkBox28.CheckedChanged += new System.EventHandler(this.checkBox28_CheckedChanged);
             // 
             // comboBox27
             // 
@@ -147,6 +149,7 @@
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(207, 28);
             this.comboBox26.TabIndex = 17;
+            this.comboBox26.SelectedIndexChanged += new System.EventHandler(this.comboBox26_SelectedIndexChanged);
             // 
             // maskedTextBox24
             // 
@@ -331,14 +334,164 @@
             this.materialLabel3.TabIndex = 0;
             this.materialLabel3.Text = "Данные студента:";
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.checkBox35);
+            this.panel7.Controls.Add(this.maskedTextBox33);
+            this.panel7.Controls.Add(this.cueTextBox34);
+            this.panel7.Controls.Add(this.cueTextBox32);
+            this.panel7.Controls.Add(this.cueTextBox31);
+            this.panel7.Controls.Add(this.cueTextBox30);
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Controls.Add(this.label15);
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.label19);
+            this.panel7.Controls.Add(this.label20);
+            this.panel7.Controls.Add(this.materialLabel4);
+            this.panel7.Location = new System.Drawing.Point(979, 1);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(465, 414);
+            this.panel7.TabIndex = 6;
+            // 
+            // checkBox35
+            // 
+            this.checkBox35.AutoSize = true;
+            this.checkBox35.Location = new System.Drawing.Point(256, 375);
+            this.checkBox35.Name = "checkBox35";
+            this.checkBox35.Size = new System.Drawing.Size(22, 21);
+            this.checkBox35.TabIndex = 22;
+            this.checkBox35.UseVisualStyleBackColor = true;
+            this.checkBox35.CheckedChanged += new System.EventHandler(this.checkBox35_CheckedChanged);
+            // 
+            // maskedTextBox33
+            // 
+            this.maskedTextBox33.Location = new System.Drawing.Point(201, 256);
+            this.maskedTextBox33.Mask = "+7(999)-000-00-00";
+            this.maskedTextBox33.Name = "maskedTextBox33";
+            this.maskedTextBox33.Size = new System.Drawing.Size(230, 26);
+            this.maskedTextBox33.TabIndex = 16;
+            // 
+            // cueTextBox34
+            // 
+            this.cueTextBox34.Cue = "Адрес электронной почты";
+            this.cueTextBox34.Location = new System.Drawing.Point(201, 313);
+            this.cueTextBox34.Name = "cueTextBox34";
+            this.cueTextBox34.Size = new System.Drawing.Size(230, 26);
+            this.cueTextBox34.TabIndex = 14;
+            // 
+            // cueTextBox32
+            // 
+            this.cueTextBox32.Cue = "Отчество родителя";
+            this.cueTextBox32.Location = new System.Drawing.Point(201, 191);
+            this.cueTextBox32.Name = "cueTextBox32";
+            this.cueTextBox32.Size = new System.Drawing.Size(230, 26);
+            this.cueTextBox32.TabIndex = 12;
+            // 
+            // cueTextBox31
+            // 
+            this.cueTextBox31.Cue = "Имя родителя";
+            this.cueTextBox31.Location = new System.Drawing.Point(201, 134);
+            this.cueTextBox31.Name = "cueTextBox31";
+            this.cueTextBox31.Size = new System.Drawing.Size(230, 26);
+            this.cueTextBox31.TabIndex = 11;
+            // 
+            // cueTextBox30
+            // 
+            this.cueTextBox30.Cue = "Фамилия родителя";
+            this.cueTextBox30.Location = new System.Drawing.Point(201, 69);
+            this.cueTextBox30.Name = "cueTextBox30";
+            this.cueTextBox30.Size = new System.Drawing.Size(230, 26);
+            this.cueTextBox30.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(13, 375);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(207, 25);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Паспортные данные:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(13, 319);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(76, 25);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Почта:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(13, 259);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(183, 25);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Номер телефона:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(13, 197);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(110, 25);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Отчество:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(13, 134);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 25);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Имя:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(13, 72);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(109, 25);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Фамилия:";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(12, 15);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(205, 27);
+            this.materialLabel4.TabIndex = 0;
+            this.materialLabel4.Text = "Данные родителя:";
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.comboBox1);
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Controls.Add(this.cueTextBox2);
-            this.panel8.Controls.Add(this.cueTextBox1);
+            this.panel8.Controls.Add(this.checkBox41);
+            this.panel8.Controls.Add(this.label22);
             this.panel8.Controls.Add(this.maskedTextBox27);
             this.panel8.Controls.Add(this.cueTextBox40);
             this.panel8.Controls.Add(this.cueTextBox36);
@@ -346,10 +499,32 @@
             this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.label11);
             this.panel8.Controls.Add(this.materialLabel5);
-            this.panel8.Location = new System.Drawing.Point(12, 443);
+            this.panel8.Location = new System.Drawing.Point(12, 434);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1428, 257);
-            this.panel8.TabIndex = 8;
+            this.panel8.Size = new System.Drawing.Size(947, 257);
+            this.panel8.TabIndex = 7;
+            // 
+            // checkBox41
+            // 
+            this.checkBox41.AutoSize = true;
+            this.checkBox41.Location = new System.Drawing.Point(189, 227);
+            this.checkBox41.Name = "checkBox41";
+            this.checkBox41.Size = new System.Drawing.Size(22, 21);
+            this.checkBox41.TabIndex = 23;
+            this.checkBox41.UseVisualStyleBackColor = true;
+            this.checkBox41.CheckedChanged += new System.EventHandler(this.checkBox41_CheckedChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(11, 222);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(118, 25);
+            this.label22.TabIndex = 30;
+            this.label22.Text = "Со школой:";
             // 
             // maskedTextBox27
             // 
@@ -370,7 +545,7 @@
             // 
             // cueTextBox36
             // 
-            this.cueTextBox36.Cue = "1 этап";
+            this.cueTextBox36.Cue = "1 семестр";
             this.cueTextBox36.Location = new System.Drawing.Point(189, 66);
             this.cueTextBox36.Name = "cueTextBox36";
             this.cueTextBox36.Size = new System.Drawing.Size(230, 26);
@@ -423,213 +598,40 @@
             this.materialLabel5.TabIndex = 21;
             this.materialLabel5.Text = "Данные по программе:";
             // 
-            // panel7
+            // button8
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.checkBox35);
-            this.panel7.Controls.Add(this.maskedTextBox33);
-            this.panel7.Controls.Add(this.cueTextBox34);
-            this.panel7.Controls.Add(this.cueTextBox32);
-            this.panel7.Controls.Add(this.cueTextBox31);
-            this.panel7.Controls.Add(this.cueTextBox30);
-            this.panel7.Controls.Add(this.label15);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.label18);
-            this.panel7.Controls.Add(this.label19);
-            this.panel7.Controls.Add(this.label20);
-            this.panel7.Controls.Add(this.materialLabel4);
-            this.panel7.Location = new System.Drawing.Point(975, 14);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(465, 414);
-            this.panel7.TabIndex = 9;
+            this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.Black;
+            this.button8.Location = new System.Drawing.Point(1160, 622);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(130, 42);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Добавить";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // checkBox35
-            // 
-            this.checkBox35.AutoSize = true;
-            this.checkBox35.Location = new System.Drawing.Point(256, 375);
-            this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(22, 21);
-            this.checkBox35.TabIndex = 22;
-            this.checkBox35.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox33
-            // 
-            this.maskedTextBox33.Location = new System.Drawing.Point(201, 256);
-            this.maskedTextBox33.Mask = "+7(999)-000-00-00";
-            this.maskedTextBox33.Name = "maskedTextBox33";
-            this.maskedTextBox33.Size = new System.Drawing.Size(230, 26);
-            this.maskedTextBox33.TabIndex = 16;
-            // 
-            // cueTextBox34
-            // 
-            this.cueTextBox34.Cue = "Адрес электронной почты";
-            this.cueTextBox34.Location = new System.Drawing.Point(201, 313);
-            this.cueTextBox34.Name = "cueTextBox34";
-            this.cueTextBox34.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox34.TabIndex = 14;
-            // 
-            // cueTextBox32
-            // 
-            this.cueTextBox32.Cue = "Отчество родителя";
-            this.cueTextBox32.Location = new System.Drawing.Point(201, 191);
-            this.cueTextBox32.Name = "cueTextBox32";
-            this.cueTextBox32.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox32.TabIndex = 12;
-            // 
-            // cueTextBox31
-            // 
-            this.cueTextBox31.Cue = "Имя родителя";
-            this.cueTextBox31.Location = new System.Drawing.Point(201, 134);
-            this.cueTextBox31.Name = "cueTextBox31";
-            this.cueTextBox31.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox31.TabIndex = 11;
-            // 
-            // cueTextBox30
-            // 
-            this.cueTextBox30.Cue = "Фамилия родителя";
-            this.cueTextBox30.Location = new System.Drawing.Point(201, 69);
-            this.cueTextBox30.Name = "cueTextBox30";
-            this.cueTextBox30.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox30.TabIndex = 10;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(13, 375);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(207, 25);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Паспортные данные:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(13, 319);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 25);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Почта:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(13, 259);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(183, 25);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "Номер телефона:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(13, 197);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 25);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "Отчество:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(13, 134);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(60, 25);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Имя:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(13, 72);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(109, 25);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Фамилия:";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(12, 15);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(205, 27);
-            this.materialLabel4.TabIndex = 0;
-            this.materialLabel4.Text = "Данные родителя:";
-            // 
-            // cueTextBox1
-            // 
-            this.cueTextBox1.Cue = "2 этап";
-            this.cueTextBox1.Location = new System.Drawing.Point(439, 66);
-            this.cueTextBox1.Name = "cueTextBox1";
-            this.cueTextBox1.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox1.TabIndex = 28;
-            // 
-            // cueTextBox2
-            // 
-            this.cueTextBox2.Cue = "3 этап";
-            this.cueTextBox2.Location = new System.Drawing.Point(685, 66);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(230, 26);
-            this.cueTextBox2.TabIndex = 29;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1151, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 28);
-            this.comboBox1.TabIndex = 31;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(976, 66);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 25);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "Уровень:";
-            // 
-            // Form5
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.DarkGreen;
+            this.BackColor = System.Drawing.Color.MediumBlue;
             this.ClientSize = new System.Drawing.Size(1797, 703);
-            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
-            this.Name = "Form5";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Английский язык";
+            this.Text = "ДоВуз";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -658,14 +660,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox27;
-        private CueTextBox cueTextBox40;
-        private CueTextBox cueTextBox36;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.CheckBox checkBox35;
         private System.Windows.Forms.MaskedTextBox maskedTextBox33;
@@ -673,16 +667,23 @@
         private CueTextBox cueTextBox32;
         private CueTextBox cueTextBox31;
         private CueTextBox cueTextBox30;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
-        private CueTextBox cueTextBox2;
-        private CueTextBox cueTextBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.CheckBox checkBox41;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox27;
+        private CueTextBox cueTextBox40;
+        private CueTextBox cueTextBox36;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private System.Windows.Forms.Button button8;
     }
 }

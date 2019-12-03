@@ -1,6 +1,6 @@
 ﻿namespace DPO
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -61,26 +61,26 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cueTextBox3 = new CueTextBox();
-            this.cueTextBox2 = new CueTextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cueTextBox4 = new CueTextBox();
-            this.cueTextBox1 = new CueTextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.cueTextBox6 = new CueTextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.cueTextBox3 = new CueTextBox();
+            this.cueTextBox2 = new CueTextBox();
+            this.cueTextBox4 = new CueTextBox();
+            this.cueTextBox1 = new CueTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -92,12 +92,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.panel5.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -288,6 +288,7 @@
             this.button5.TabIndex = 19;
             this.button5.Text = "Вывести отчет";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -425,6 +426,93 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Управление данными";
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.cueTextBox6);
+            this.panel6.Controls.Add(this.button2);
+            this.panel6.Controls.Add(this.button7);
+            this.panel6.Controls.Add(this.dataGridView6);
+            this.panel6.Controls.Add(this.materialLabel3);
+            this.panel6.Location = new System.Drawing.Point(1276, 24);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(576, 513);
+            this.panel6.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(92)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(411, 455);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 35);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Удалить";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(92)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(21, 455);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(136, 35);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "Добавить";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridView6.Location = new System.Drawing.Point(21, 78);
+            this.dataGridView6.Name = "dataGridView6";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridView6.RowTemplate.Height = 28;
+            this.dataGridView6.Size = new System.Drawing.Size(526, 296);
+            this.dataGridView6.TabIndex = 1;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(16, 15);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(324, 26);
+            this.materialLabel3.TabIndex = 0;
+            this.materialLabel3.Text = "Добавить уровни английского:";
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -434,26 +522,10 @@
             this.panel2.Controls.Add(this.button16);
             this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.materialLabel2);
-            this.panel2.Location = new System.Drawing.Point(609, 17);
+            this.panel2.Location = new System.Drawing.Point(652, 24);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(576, 513);
             this.panel2.TabIndex = 1;
-            // 
-            // cueTextBox3
-            // 
-            this.cueTextBox3.Cue = "Код специальности";
-            this.cueTextBox3.Location = new System.Drawing.Point(389, 405);
-            this.cueTextBox3.Name = "cueTextBox3";
-            this.cueTextBox3.Size = new System.Drawing.Size(158, 26);
-            this.cueTextBox3.TabIndex = 9;
-            // 
-            // cueTextBox2
-            // 
-            this.cueTextBox2.Cue = "Введите название группы: ИСиП-1-19";
-            this.cueTextBox2.Location = new System.Drawing.Point(21, 405);
-            this.cueTextBox2.Name = "cueTextBox2";
-            this.cueTextBox2.Size = new System.Drawing.Size(298, 26);
-            this.cueTextBox2.TabIndex = 8;
             // 
             // button15
             // 
@@ -496,12 +568,12 @@
             // 
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(16, 15);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(199, 27);
+            this.materialLabel2.Size = new System.Drawing.Size(195, 26);
             this.materialLabel2.TabIndex = 0;
             this.materialLabel2.Text = "Добавить группы:";
             // 
@@ -514,26 +586,10 @@
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.materialLabel1);
-            this.panel1.Location = new System.Drawing.Point(14, 17);
+            this.panel1.Location = new System.Drawing.Point(28, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(576, 513);
             this.panel1.TabIndex = 0;
-            // 
-            // cueTextBox4
-            // 
-            this.cueTextBox4.Cue = "Код специальности";
-            this.cueTextBox4.Location = new System.Drawing.Point(389, 405);
-            this.cueTextBox4.Name = "cueTextBox4";
-            this.cueTextBox4.Size = new System.Drawing.Size(158, 26);
-            this.cueTextBox4.TabIndex = 10;
-            // 
-            // cueTextBox1
-            // 
-            this.cueTextBox1.Cue = "Введите название специальности:«Информационные системы и программирование»";
-            this.cueTextBox1.Location = new System.Drawing.Point(21, 405);
-            this.cueTextBox1.Name = "cueTextBox1";
-            this.cueTextBox1.Size = new System.Drawing.Size(301, 26);
-            this.cueTextBox1.TabIndex = 7;
             // 
             // button14
             // 
@@ -576,27 +632,14 @@
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(16, 15);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(286, 27);
+            this.materialLabel1.Size = new System.Drawing.Size(278, 26);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Добавить специальность:";
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.cueTextBox6);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.button7);
-            this.panel6.Controls.Add(this.dataGridView6);
-            this.panel6.Controls.Add(this.materialLabel3);
-            this.panel6.Location = new System.Drawing.Point(1204, 17);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(576, 513);
-            this.panel6.TabIndex = 2;
             // 
             // cueTextBox6
             // 
@@ -606,77 +649,37 @@
             this.cueTextBox6.Size = new System.Drawing.Size(526, 26);
             this.cueTextBox6.TabIndex = 8;
             // 
-            // button2
+            // cueTextBox3
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(92)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(411, 455);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 35);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = false;
+            this.cueTextBox3.Cue = "Код специальности";
+            this.cueTextBox3.Location = new System.Drawing.Point(389, 405);
+            this.cueTextBox3.Name = "cueTextBox3";
+            this.cueTextBox3.Size = new System.Drawing.Size(158, 26);
+            this.cueTextBox3.TabIndex = 9;
             // 
-            // button7
+            // cueTextBox2
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(92)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(21, 455);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 35);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Добавить";
-            this.button7.UseVisualStyleBackColor = false;
+            this.cueTextBox2.Cue = "Введите название группы: ИСиП-1-19";
+            this.cueTextBox2.Location = new System.Drawing.Point(21, 405);
+            this.cueTextBox2.Name = "cueTextBox2";
+            this.cueTextBox2.Size = new System.Drawing.Size(298, 26);
+            this.cueTextBox2.TabIndex = 8;
             // 
-            // dataGridView6
+            // cueTextBox4
             // 
-            this.dataGridView6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView6.Location = new System.Drawing.Point(21, 78);
-            this.dataGridView6.Name = "dataGridView6";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView6.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView6.RowTemplate.Height = 28;
-            this.dataGridView6.Size = new System.Drawing.Size(526, 296);
-            this.dataGridView6.TabIndex = 1;
+            this.cueTextBox4.Cue = "Код специальности";
+            this.cueTextBox4.Location = new System.Drawing.Point(389, 405);
+            this.cueTextBox4.Name = "cueTextBox4";
+            this.cueTextBox4.Size = new System.Drawing.Size(158, 26);
+            this.cueTextBox4.TabIndex = 10;
             // 
-            // materialLabel3
+            // cueTextBox1
             // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(16, 15);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(336, 27);
-            this.materialLabel3.TabIndex = 0;
-            this.materialLabel3.Text = "Добавить уровни английского:";
+            this.cueTextBox1.Cue = "Введите название специальности:«Информационные системы и программирование»";
+            this.cueTextBox1.Location = new System.Drawing.Point(21, 405);
+            this.cueTextBox1.Name = "cueTextBox1";
+            this.cueTextBox1.Size = new System.Drawing.Size(301, 26);
+            this.cueTextBox1.TabIndex = 7;
             // 
             // Form1
             // 
@@ -691,6 +694,7 @@
             this.Name = "Form1";
             this.Text = "Отдел дополнительного образования";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -703,15 +707,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DPO
 {
-    public partial class Form2 : Form
+    public partial class FormTetradi : Form
     {
 
         SqlConnection sql = new SqlConnection("Data Source = DESKTOP-N7ITL14\\KATE;" +
@@ -20,12 +20,14 @@ namespace DPO
 
         string ch1ch, ch2ch, ch3ch;
 
-        public Form2()
+        public FormTetradi()
         {
             InitializeComponent();
+
             ch1ch = "Нет";
             ch2ch = "Нет";
             ch3ch = "Нет";
+
             sql.Open();
             SqlCommand command1 = new SqlCommand("SELECT ID_Specialty FROM Specialty", sql);
             SqlDataReader read1 = command1.ExecuteReader();

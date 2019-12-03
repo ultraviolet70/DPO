@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DPO
 {
-    public partial class Form4 : Form
+    public partial class FormDovyz : Form
     {
 
         SqlConnection sql = new SqlConnection("Data Source = DESKTOP-N7ITL14\\KATE;" +
@@ -125,7 +125,7 @@ namespace DPO
             }
         }
 
-        public Form4()
+        public FormDovyz()
         {
             InitializeComponent();
 
